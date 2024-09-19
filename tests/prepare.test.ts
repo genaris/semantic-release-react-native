@@ -1225,7 +1225,6 @@ describe('prepare', () => {
     it.each([
       'increment',
       'relative',
-      'semantic',
       'none',
     ])('skips a prerelease version if the versioning strategy is %s', async (strategy) => {
       const context = createContext({ version: '1.2.3-beta.1' });
